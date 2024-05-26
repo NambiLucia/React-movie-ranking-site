@@ -3,7 +3,9 @@ import React from 'react'
  function Header() {
   return (
     <div>
-      <ul>
+      <header className='flex justify-center'>
+      <nav className='justify-center w-1/4 bg-custom-red h-24 w-full'>
+      <ul className='flex justify-around py-8'>
         <li>Home</li>
         <li>Category</li>
         <li>Top rated</li>
@@ -11,6 +13,8 @@ import React from 'react'
         <li>Contact us</li>
 
       </ul>
+      </nav>
+      </header>
     </div>
   )
 }
