@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'custom-red': '#e50914',
+        'custom-yellow': '#ffc966',
       },
     },
   },
