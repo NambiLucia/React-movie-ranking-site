@@ -33,7 +33,7 @@ function Toprated() {
   return (
     <div className="bg-black">
       <h1 className="text-4xl font-bold text-center mb-8 text-custom-red">HIGHEST RATED</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
         {topData.map((data,index) => (
 <div key={index} className="bg-black rounded-lg shadow-lg p-4">
 <h4 className="text-xl font-semibold mb-2 text-custom-yellow">{data.title}</h4>

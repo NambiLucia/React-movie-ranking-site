@@ -42,7 +42,7 @@ function Review() {
             );
           })
         ) : (
-          <p className="text-center">Loading.....</p>
+          <p className="text-center text-custom-yellow">Loading.....</p>
         )}
       </div>
     </div>
