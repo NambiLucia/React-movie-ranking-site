@@ -9,6 +9,7 @@ export default {
       colors: {
         'custom-red': '#e50914',
         'custom-yellow': '#ffc966',
+        'custom-grey': '#232323',
       },
     },
   },
