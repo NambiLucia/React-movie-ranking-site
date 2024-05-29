@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Hero() {
+  const [hero, setHero] = useState([]);
+
+  function fetchdata() {
+    const url = "http://localhost:1337/api/heroes?populate=*";
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((obj) => {
+        let heroObj = obj.data;
+        setHero(heroObj);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
+
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white ">
       <div>
-        <h1 className="text-custom-red text-center py-4">Chill and Thrill Cinema</h1>
+        <h1 className="text-custom-red text-center py-4">
+          Chill and Thrill Cinema
+        </h1>
 
         <p className="text-center m-8">
           <span>
-            <em>Chill & Thrill Cinema</em>{" "}
+            <em>Chill & Thrill Cinema</em>
           </span>
           is a platform for fans of all things horror, thriller, and true-crime
           documentaries.
@@ -22,13 +45,23 @@ function Hero() {
           like no other.
         </p>
       </div>
-      <div className="flex justify-center items-center">
-        <img
-          src="\images\backdrop-image.jpg"
-          alt="horror scene"
-          className="w-11/12 h-1/4 border-none rounded-[1em]"
-        />
+
+
+      <div >
+        {hero.length > 0 ? (
+          hero.map((element) => (
+            <div key={element.id} className="flex justify-center ">
+              <img src={`http://localhost:1337${element.attributes.image.data.attributes.url}`}alt="hero"  className="text-center rounded-lg  h-150 rounded-lg "
+              />
+           
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-custom-yellow">Loading....</p>
+        )}
       </div>
+
+
     </div>
   );
 }

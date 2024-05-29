@@ -34,9 +34,10 @@ function Review() {
               >
                 <div className="mb-4 text-white" >
                 
-                  {element.attributes.Text}
+                  {element.attributes.text}
                   <br />
-               <span className="font-semibold text-custom-yellow">{element.attributes.Name} </span> 
+                  <br />
+               <span className="font-semibold text-custom-yellow ">{element.attributes.name} </span> 
                 </div>
               </div>
             );
