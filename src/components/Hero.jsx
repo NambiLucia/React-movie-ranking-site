@@ -25,10 +25,10 @@ function Hero() {
   return (
     <div className="bg-black text-white">
       <div>
-        <h1 className="text-custom-red text-center py-4">
+        <h1 className="text-custom-red text-center py-4 font-Nosifer text-7xl">
           Chill and Thrill Cinema
         </h1>
-        <p className="text-center m-8">
+        <p className="text-center m-8 font-special-elite">
           <span>
             <em>Chill & Thrill Cinema</em>
           </span>{" "}

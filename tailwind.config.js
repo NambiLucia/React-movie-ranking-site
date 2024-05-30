@@ -11,6 +11,10 @@ export default {
         'custom-yellow': '#ffc966',
         'custom-grey': '#232323',
       },
+      fontFamily: {
+        'special-elite': ['Special Elite'],
+        "Nosifer":['Nosifer'],
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Horror() {
   const [horror, setHorror] = useState([]);
@@ -23,6 +25,7 @@ function Horror() {
 
   return (
     <div>
+      <Header />
       <h2 className="text-custom-red text-center mb-4">HORROR MOVIE COLLECTION</h2>
       <div className="grid lg:grid-cols-4 gap-4 mb-8">
         {horror.length > 0  ?(
@@ -59,7 +62,7 @@ function Horror() {
 
 
 
-
+      <Footer />
 
 
     </div>
