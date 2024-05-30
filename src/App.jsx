@@ -1,28 +1,37 @@
-import React from 'react'
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Genre from './components/Genre';
-import Toprated from './components/Toprated';
-import Review from './components/Review';
-import News from './components/News';
-import Horror from './components/Horror';
-import Thriller from './components/Thriller';
-import Truecrime from './components/Truecrime.jsx';
+import {   BrowserRouter as Router, Route, Routes, } from "react-router-dom";
+import Home from "./components/Home";
+import Horror from "./components/Horror";
+import Thriller from "./components/Thriller";
+import Truecrime from "./components/Truecrime";
+
+
+
+
  
  function App() {
   return (
     <div>
-    <Header />
-    <Hero />
-    <Horror />
-    <Thriller />
-    <Truecrime />
-    <Genre />
-    <Toprated />
-    <Review />
-    <News />
-    <Footer />
+   <Router>
+    <Routes>
+    <Route exact path="/" element={<Home />} />
+    <Route exact path="/Horror" element={<Horror />} />
+    <Route exact path="/Thriller" element={<Thriller />} />
+    <Route exact path="/Truecrime" element={<Truecrime />} />
+
+
+
+
+
+
+    </Routes>
+
+   
+   
+   
+   
+   
+   
+   </Router>
     </div>
   )
 }
