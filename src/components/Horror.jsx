@@ -38,9 +38,10 @@ function Horror() {
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-cover rounded-lg mb-4"/>
 
-                  <p className="text-custom-red hover:underline text-center font-special-elite">Watch Trailer</p>
+                  <a href={`${element.attributes.link}`} target="_blank">
+                     <p className="text-custom-red hover:underline text-center font-special-elite">Watch Trailer</p>
+                  </a>
 
-           
               </div>
              
             )

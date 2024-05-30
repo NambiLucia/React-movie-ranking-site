@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Genre() {
   const [genre, setGenres] = useState([]);
@@ -27,6 +28,7 @@ function Genre() {
       <div className="grid lg:grid-cols-3 gap-4 mb-8">
         {genre.length > 0 ?(
           genre.map((element) => {
+       
             return (
               <div key={element.id} id={`genre`} 
               className="bg-white p-4 rounded-lg shadow-md"> 
@@ -35,7 +37,7 @@ function Genre() {
                   <img src={`http://localhost:1337${element.attributes.image.data.attributes.url }`}
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-contain rounded-lg mb-4"/>
-                  <a>
+                  <a href={`${element.attributes.link}`} target="_blank">
                     <p className="text-black hover:underline text-center">View</p>
                   </a>
 
