@@ -34,7 +34,7 @@ function Genre() {
               className="bg-white p-4 rounded-lg shadow-md"> 
               <h3 className="text-lg font-bold mb-2 text-center font-special-elite ">{element.attributes.Title}</h3>
               
-                  <img src={`http://localhost:1337${element.attributes.image.data.attributes.url }`}
+                  <img src={`https://react-movie-backend-8a2o.onrender.com/${element.attributes.image.data.attributes.url }`}
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-contain rounded-lg mb-4"/>
                   <a href={`${element.attributes.link}`} target="_blank">
