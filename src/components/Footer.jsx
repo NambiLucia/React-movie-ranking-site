@@ -23,7 +23,7 @@ import React from 'react'
           </ul>
         </div>
 
-        <div>
+        <div id={`sub`} >
           <h4 className='text-lg font-semibold mb-4 text-custom-red'>Subscribe</h4>
           <input 
             type="text" 

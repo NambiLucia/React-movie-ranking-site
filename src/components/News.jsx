@@ -24,7 +24,7 @@ function News() {
 
   return (
     <div className="bg-black">
-      <h2 className="text-custom-yellow text-center">Have you Voted for the iHorror Awards 2024?</h2><br />
+      <h2 className="text-custom-yellow text-center" id={`news`} >Have you Voted for the iHorror Awards 2024?</h2><br />
      <a  href="https://ihorror.com/" target="_blank"><h3 className="hover:underline text-center text-custom-yellow">Click to Vote Now</h3>
      </a> 
 

@@ -23,18 +23,21 @@ function Genre() {
 
   return (
     <div>
-      <h2 className="text-custom-red text-center mb-4">GENRE</h2>
+      <h2 className="text-custom-red text-center mb-4" >GENRE</h2>
       <div className="grid lg:grid-cols-3 gap-4 mb-8">
         {genre.length > 0 ?(
           genre.map((element) => {
             return (
-              <div key={element.id} className="bg-white p-4 rounded-lg shadow-md"> 
+              <div key={element.id} id={`genre`} 
+              className="bg-white p-4 rounded-lg shadow-md"> 
               <h3 className="text-lg font-bold mb-2 text-center">{element.attributes.Title}</h3>
               
                   <img src={`http://localhost:1337${element.attributes.image.data.attributes.url }`}
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-contain rounded-lg mb-4"/>
-                  <p className="text-black hover:underline text-center">View</p>
+                  <a>
+                    <p className="text-black hover:underline text-center">View</p>
+                  </a>
 
            
               </div>
