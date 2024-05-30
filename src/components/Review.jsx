@@ -21,7 +21,7 @@ function Review() {
 
   return (
     <div className="p-8 bg-custom-grey">
-      <h4 className="text-2xl font-bold mb-8 text-center text-custom-yellow">
+      <h4 className="text-2xl font-bold mb-8 text-center text-custom-yellow font-special-elite">
         WHAT PEOPLE ARE SAYING ABOUT US
       </h4>
       <div className="grid lg:grid-cols-3 gap-10 ">
@@ -32,7 +32,7 @@ function Review() {
                 key={element.id}
                 className="grid-cols-3"
               >
-                <div className="mb-4 text-white" >
+                <div className="mb-4 text-white font-special-elite" >
                 
                   {element.attributes.text}
                   <br />

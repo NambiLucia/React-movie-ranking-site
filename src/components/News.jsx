@@ -24,8 +24,8 @@ function News() {
 
   return (
     <div className="bg-black">
-      <h2 className="text-custom-yellow text-center" id={`news`} >Have you Voted for the iHorror Awards 2024?</h2><br />
-     <a  href="https://ihorror.com/" target="_blank"><h3 className="hover:underline text-center text-custom-yellow">Click to Vote Now</h3>
+      <h2 className="text-custom-yellow text-center  font-Nosifer py-8 text-4xl" id={`news`} >Have you Voted for the iHorror Awards 2024?</h2><br />
+     <a  href="https://ihorror.com/" target="_blank"><h3 className="hover:underline text-center text-custom-yellow font-special-elite text-2xl ">Click to Vote Now</h3>
      </a> 
 
       <div >
@@ -37,7 +37,7 @@ function News() {
             </div>
           ))
         ) : (
-          <p className="text-center text-custom-yellow">Loading....</p>
+          <p className="text-center text-custom-yellow font-special-elite">Loading....</p>
         )}
       </div>
     </div>
