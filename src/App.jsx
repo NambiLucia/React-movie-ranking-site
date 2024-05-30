@@ -6,12 +6,14 @@ import Genre from './components/Genre';
 import Toprated from './components/Toprated';
 import Review from './components/Review';
 import News from './components/News';
+import Horror from './components/Horror';
  
  function App() {
   return (
     <div>
     <Header />
     <Hero />
+    <Horror />
     <Genre />
     <Toprated />
     <Review />
