@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Truecrime() {
   const [truecrime, setTruecrime] = useState([]);
@@ -23,6 +25,7 @@ function Truecrime() {
 
   return (
     <div>
+      <Header />
       <h2 className="text-custom-red text-center mb-4">TRUE-CRIME DOCUMENTARY COLLECTION</h2>
       <div className="grid lg:grid-cols-4 gap-4 mb-8">
         {truecrime.length > 0 ?(
@@ -60,7 +63,7 @@ function Truecrime() {
 
 
 
-
+      <footer />
 
     </div>
   );
