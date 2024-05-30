@@ -7,6 +7,8 @@ import Toprated from './components/Toprated';
 import Review from './components/Review';
 import News from './components/News';
 import Horror from './components/Horror';
+import Thriller from './components/Thriller';
+import Truecrime from './components/Truecrime.jsx';
  
  function App() {
   return (
@@ -14,6 +16,8 @@ import Horror from './components/Horror';
     <Header />
     <Hero />
     <Horror />
+    <Thriller />
+    <Truecrime />
     <Genre />
     <Toprated />
     <Review />

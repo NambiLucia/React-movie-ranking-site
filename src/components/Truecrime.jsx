@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 
-function Horror() {
-  const [horror, setHorror] = useState([]);
+function Truecrime() {
+  const [truecrime, setTruecrime] = useState([]);
 
   function fetchData() {
-    let url = "http://localhost:1337/api/pageimages?populate=*";
+    let url = "http://localhost:1337/api/truecrimes?populate=*";
     fetch(url)
       .then((response) => {
         return response.json();
       })
       .then((obj) => {
-        let horrorData = obj.data;
-        setHorror(horrorData);
+        let truecrimeData = obj.data;
+        setTruecrime(truecrimeData);
       })
       .catch((error) => {
         console.error(error);
@@ -23,10 +23,10 @@ function Horror() {
 
   return (
     <div>
-      <h2 className="text-custom-red text-center mb-4">HORROR MOVIE COLLECTION</h2>
+      <h2 className="text-custom-red text-center mb-4">TRUE-CRIME DOCUMENTARY COLLECTION</h2>
       <div className="grid lg:grid-cols-4 gap-4 mb-8">
-        {horror.length > 0  ?(
-          horror.map((element) => {
+        {truecrime.length > 0 ?(
+          truecrime.map((element) => {
             return (
               <div key={element.id} className="bg-white p-4 rounded-lg shadow-md"> 
               <h3 className="text-lg font-bold mb-2 text-center">{element.attributes.title}</h3>
@@ -65,4 +65,4 @@ function Horror() {
     </div>
   );
 }
-export default Horror;
+export default Truecrime;
