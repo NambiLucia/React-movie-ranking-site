@@ -1,4 +1,5 @@
 import React from 'react'
+import Subscribe from './Subscribe';
 
  function Footer() {
   return (
@@ -24,22 +25,7 @@ import React from 'react'
         </div>
 
         <div id={`sub`} >
-          <h4 className='text-lg font-semibold mb-4 text-custom-red'>Subscribe</h4>
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Name" 
-            className='w-full mb-2 px-4 py-2 text-black rounded'
-          />
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Enter your E-mail" 
-            className='w-full mb-2 px-4 py-2 text-black rounded'
-          />
-          <button className='bg-custom-red text-white py-2 px-4 rounded'>
-            Subscribe
-          </button>
+          <Subscribe />
         </div>
         
       </div>
