@@ -26,7 +26,7 @@ function Truecrime() {
   return (
     <div>
       <Header />
-      <h2 className="text-custom-red text-center mb-4 font-Nosifer text-4xl py-8 bg-black">TRUE-CRIME DOCUMENTARY COLLECTION</h2>
+      <h2 className="text-custom-red text-center mb-4 font-Nosifer text-4xl pt-32 pb-8 bg-black">TRUE-CRIME DOCUMENTARY COLLECTION</h2>
       <div className="grid lg:grid-cols-4 gap-4 mb-8">
         {truecrime.length > 0 ?(
           truecrime.map((element) => {

@@ -38,7 +38,7 @@ function Genre() {
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-contain rounded-lg mb-4"/>
                   <a href={`${element.attributes.link}`} target="_blank">
-                    <p className="text-black hover:underline text-center">View</p>
+                    <p className="text-black hover:underline text-center font-special-elite">View</p>
                   </a>
 
            
