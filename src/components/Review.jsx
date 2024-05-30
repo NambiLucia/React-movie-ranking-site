@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function Review() {
   const [review, setReview] = useState([]);
   function fetchData() {
-    let url = "http://localhost:1337/api/reviews?populate=*";
+    let url = "https://react-movie-backend-8a2o.onrender.com/api/reviews?populate=*";
     fetch(url)
       .then((response) => {
         return response.json();

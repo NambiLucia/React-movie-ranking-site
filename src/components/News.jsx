@@ -4,7 +4,7 @@ function News() {
   const [news, setNews] = useState([]);
 
   function fetchdata() {
-    const url = "http://localhost:1337/api/news?populate=*";
+    const url = "https://react-movie-backend-8a2o.onrender.com/api/news?populate=*";
     fetch(url)
       .then((response) => {
         return response.json();
