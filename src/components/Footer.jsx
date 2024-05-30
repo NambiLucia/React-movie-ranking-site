@@ -2,7 +2,7 @@ import React from 'react'
 
  function Footer() {
   return (
-    <footer className='bg-black text-white py-8'>
+    <footer className='bg-black text-white py-8 font-special-elite'>
       <div className='flex justify-around'>
         <div>
           <h4 className='text-lg font-semibold mb-4 text-custom-red'>Chill & Thrill</h4>

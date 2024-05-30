@@ -23,14 +23,14 @@ function Genre() {
 
   return (
     <div>
-      <h2 className="text-custom-red text-center mb-4" >GENRE</h2>
+      <h2 className="text-custom-red text-center mb-4 font-Nosifer text-4xl py-8" >GENRE</h2>
       <div className="grid lg:grid-cols-3 gap-4 mb-8">
         {genre.length > 0 ?(
           genre.map((element) => {
             return (
               <div key={element.id} id={`genre`} 
               className="bg-white p-4 rounded-lg shadow-md"> 
-              <h3 className="text-lg font-bold mb-2 text-center">{element.attributes.Title}</h3>
+              <h3 className="text-lg font-bold mb-2 text-center font-special-elite ">{element.attributes.Title}</h3>
               
                   <img src={`http://localhost:1337${element.attributes.image.data.attributes.url }`}
                   alt={element.attributes.title}

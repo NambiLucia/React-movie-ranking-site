@@ -32,16 +32,16 @@ function Toprated() {
 
   return (
     <div className="bg-black">
-      <h1 className="text-4xl font-bold text-center mb-8 text-custom-red" id={`top`} >HIGHEST RATED</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-custom-red font-Nosifer py-8" id={`top`} >HIGHEST RATED</h1>
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
         {topData.map((data,index) => (
 <div key={index} className="bg-black rounded-lg shadow-lg p-4">
-<h4 className="text-xl font-semibold mb-2 text-custom-yellow">{data.title}</h4>
+<h4 className="text-xl font-semibold mb-2 text-custom-yellow font-special-elite">{data.title}</h4>
 <img 
 src={data.image}
 alt={`movie ${index + 1}`}
 className="w-full h-64 object-cover rounded-lg mb-4"/>
-<a href={data.trailer} target="_blank" className="hover:underline text-custom-yellow">Watch Trailer</a>
+<a href={data.trailer} target="_blank" className="hover:underline text-custom-yellow font-special-elite">Watch Trailer</a>
 
 
 
