@@ -13,7 +13,7 @@ const Subscribe = () => {
       e.preventDefault();
       if (name && email && password) {
         try {
-          const response = await fetch('http://localhost:1337/api/auth/local/register', {
+          const response = await fetch('https://react-movie-backend-8a2o.onrender.com/api/auth/local/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

@@ -6,7 +6,7 @@ function Truecrime() {
   const [truecrime, setTruecrime] = useState([]);
 
   function fetchData() {
-    let url = "http://localhost:1337/api/truecrimes?populate=*";
+    let url = "https://react-movie-backend-8a2o.onrender.com/api/truecrimes?populate=*";
     fetch(url)
       .then((response) => {
         return response.json();
@@ -34,7 +34,7 @@ function Truecrime() {
               <div key={element.id} className="bg-black p-4 rounded-lg shadow-md"> 
               <h3 className="text-lg font-bold mb-2 text-center text-custom-red">{element.attributes.title}</h3>
               
-                  <img src={`http://localhost:1337${element.attributes.image.data[0].attributes.url }`}
+                  <img src={`https://react-movie-backend-8a2o.onrender.com${element.attributes.image.data[0].attributes.url }`}
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-cover rounded-lg mb-4"/>
 

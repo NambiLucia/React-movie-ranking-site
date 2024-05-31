@@ -5,7 +5,7 @@ function Genre() {
   const [genre, setGenres] = useState([]);
 
   function fetchData() {
-    let url = "http://localhost:1337/api/genres?populate=*";
+    let url = "https://react-movie-backend-8a2o.onrender.com/api/genres?populate=*";
     fetch(url)
       .then((response) => {
         return response.json();

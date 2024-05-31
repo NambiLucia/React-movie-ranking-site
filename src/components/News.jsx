@@ -32,7 +32,7 @@ function News() {
         {news.length > 0 ? (
           news.map((element) => (
             <div key={element.id} className="flex justify-center ">
-              <img src={`http://localhost:1337${element.attributes.image.data.attributes.url}`}alt="ihorror"  className="text-center"/>
+              <img src={`https://react-movie-backend-8a2o.onrender.com${element.attributes.image.data.attributes.url}`}alt="ihorror"  className="text-center"/>
            
             </div>
           ))
