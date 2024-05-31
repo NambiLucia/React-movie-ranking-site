@@ -4,7 +4,7 @@ It's dedicated to helping gothic movie enthusiasts discover the best and most th
 Our curated rankings will guide you to the must-watch movies, ensuring you have a spine-tingling viewing experience every time.
 
 
-![alt text](/public/images/Afaazi-image.png)
+![alt text]()
 
 ## Features
 1. ### Top -rated: 
@@ -33,34 +33,26 @@ Clone the repository
 Ensure you have a backend service running to handle API requests. In this case, we used **Strapi**.
 
 # API Endpoints
-- User Register:GET (http://localhost:1337/api/auth/local/register)
-- User Logins: GET (http://localhost:1337/api/auth/local)
+- Subscribe:POST (https://react-movie-backend-8a2o.onrender.com/api/auth/local/register)
 
 ## API testing
 We used **Postman**
 
 # Usage
-1. Register a New User
+1. Browse  
+- Browse through the to 5 rated movies and the different genre categories.
 
-- Fill out the registration form with your details.
-- Submit the form to create an account.
-
-2. Browse service providers
-
-- Browse the list of available service providers.
-- Select your preferred vendors and proceed to booking.
-
-3. Book Service Providers
-- Fill out booking form with all required information and wait for feedback from our team.
+2. News
+- Browse through the news section for latest updates in the horror film industry
 
 # Contributing
 We welcome contributions! Submit a pull request.
 
-# Contact
-For any inquiries or issues, please contact us at afaazievents@gmail.com.
+# Subscribe
+- Subscribe with us for the latest updates on horrors,thrillers and truecrime documentaries
 
 ---
-Thank you for using Afaazi Events to manage your wedding planning needs! We hope you have a wonderful experience.
+We hope you have a wonderful experience.
 
 
 
