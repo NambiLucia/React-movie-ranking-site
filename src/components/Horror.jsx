@@ -6,7 +6,7 @@ function Horror() {
   const [horror, setHorror] = useState([]);
 
   function fetchData() {
-    let url = "http://localhost:1337/api/pageimages?populate=*";
+    let url = "https://react-movie-backend-8a2o.onrender.com/api/pageimages?populate=*";
     fetch(url)
       .then((response) => {
         return response.json();
@@ -34,7 +34,7 @@ function Horror() {
               <div key={element.id} className="  p-4 rounded-lg shadow-md bg-black"> 
               <h3 className="text-lg font-bold text-custom-red mb-2 text-center ">{element.attributes.title}</h3>
               
-                  <img src={`http://localhost:1337${element.attributes.image.data[0].attributes.url }`}
+                  <img src={`https://react-movie-backend-8a2o.onrender.com${element.attributes.image.data[0].attributes.url }`}
                   alt={element.attributes.title}
                   className=" flex w-full h-80 object-cover rounded-lg mb-4"/>
 
