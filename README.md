@@ -13,7 +13,7 @@ Our curated rankings will guide you to the must-watch movies, ensuring you have 
 - The movies are split into three different gothic genres i.e Horror,Thriller and True-crime documentaries
 
 3.  ### Subcription: 
-- Fans of these movie genres are sign up to get the latest updates
+- Fans of these movie genres can sign up to get the latest updates
 
 
 # Getting Started
