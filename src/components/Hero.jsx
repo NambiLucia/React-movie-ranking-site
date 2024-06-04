@@ -52,7 +52,7 @@ function Hero() {
           hero.map((element) => (
             <div key={element.id} className="flex justify-center">
               <img
-                src={`https://react-movie-backend-8a2o.onrender.com/${element.attributes.image.data[0].attributes.url}`}
+                src={element.attributes.image.data[0].attributes.formats.thumbnail.url}
                 alt="hero"
                 className="text-center h-150 rounded-lg"
               />
